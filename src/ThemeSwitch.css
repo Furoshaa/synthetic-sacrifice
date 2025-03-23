@@ -19,19 +19,21 @@ body.light-theme .theme-switch-container {
 
 .theme-switch-slider {
   position: absolute;
-  background-color: var(--bg-dark);
-  width: 40px;
-  height: 28px;
-  border-radius: 14px;
-  top: 3px;
+  background-color: #2a2a2a;
+  width: 32px;
+  height: 24px;
+  border-radius: 12px;
+  top: 5px;
   z-index: 1;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   transition: transform 0.15s ease;
+  border: 1px solid #444;
 }
 
 body.light-theme .theme-switch-slider {
-  background-color: var(--bg-light);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd;
 }
 
 .theme-switch-buttons {
@@ -41,6 +43,7 @@ body.light-theme .theme-switch-slider {
   height: 100%;
   width: 100%;
   justify-content: space-between;
+  padding: 0 4px;
 }
 
 .theme-icon-button {
@@ -53,7 +56,7 @@ body.light-theme .theme-switch-slider {
   cursor: pointer;
   transition: color 0.15s;
   height: 100%;
-  width: 40px;
+  width: 34px;
   color: var(--text-dark);
   opacity: 0.6;
   padding: 0;

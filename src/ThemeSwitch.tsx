@@ -38,9 +38,9 @@ const ThemeSwitch: React.FC<{ onThemeChange: (theme: 'light' | 'dark') => void }
   const getPositionX = () => {
     // Calculate slider position based on mode
     switch (selectedMode) {
-      case 'light': return 0;
+      case 'light': return 4;
       case 'system': return 40;
-      case 'dark': return 80;
+      case 'dark': return 76;
       default: return 40;
     }
   };
@@ -57,9 +57,9 @@ const ThemeSwitch: React.FC<{ onThemeChange: (theme: 'light' | 'dark') => void }
         initial={false}
         transition={{ 
           type: "spring", 
-          stiffness: 700, 
-          damping: 30,
-          duration: 0.15
+          stiffness: 800, 
+          damping: 35,
+          duration: 0.1
         }}
         animate={{ 
           x: getPositionX()
