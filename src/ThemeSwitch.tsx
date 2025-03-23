@@ -38,9 +38,9 @@ const ThemeSwitch: React.FC<{ onThemeChange: (theme: 'light' | 'dark') => void }
   const getPositionX = () => {
     // Calculate slider position based on mode
     switch (selectedMode) {
-      case 'light': return 4;
-      case 'system': return 40;
-      case 'dark': return 76;
+      case 'light': return 5;
+      case 'system': return 39;
+      case 'dark': return 73;
       default: return 40;
     }
   };
